@@ -603,12 +603,14 @@ footer p {
     
     /* Header adjustments */
     .header {
-        height: 50px;
-        padding: 0 10px;
+        height: auto;
+        padding: 10px 5px;
+        flex-wrap: wrap;
     }
     
     .logoContainer p {
         font-size: 24px;
+        flex: 1;
     }
     
     .logo {
@@ -619,7 +621,7 @@ footer p {
         margin: 0 8px;
         font-size: 16px;
     }
-    
+
     /* Home section adjustments */
     #home {
         padding-top: 60px;
@@ -833,13 +835,24 @@ footer p {
 
 /* Additional adjustments for very small screens */
 @media only screen and (max-width: 480px) {
+    .body{
+        overflow-x: hidden;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
     .logoContainer p {
         font-size: 20px;
+        flex: 1;
     }
     
     .navBar ul li {
         font-size: 14px;
         margin: 0 5px;
+        padding-right: 10px;
     }
     
     .introName h1 {
@@ -853,11 +866,44 @@ footer p {
     .core-value {
         width: 90%;
     }
+
+    .education {
+        flex-direction: column;
+        margin: 0;
+        gap: 0px;
+    }
+
+    .education p {
+        line-height: 0.0;
+    }
+
+    .skillsContainer img {
+        width: 30px; 
+        height: 30px;
+    }
     
     .language {
         width: 60px;
         padding: 20px 5px;
         font-size: 14px;
+    }
+
+    .interest img {
+        border-radius: 300px;
+        width: 40%;
+        height: 70px;
+    }
+
+    .interest {
+        gap: 20px;
+    }
+
+    .interest p {
+        font-size: 30px;
+    }
+
+    .form {
+        padding: 10px;
     }
     
     .contact-info a {
