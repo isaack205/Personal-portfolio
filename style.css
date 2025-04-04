@@ -604,7 +604,6 @@ footer p {
     /* Header adjustments */
     .header {
         height: auto;
-        padding: 10px 5px;
         flex-wrap: wrap;
     }
     
@@ -848,19 +847,28 @@ footer p {
         font-size: 20px;
         flex: 1;
     }
-    
+
+    .introName h3 {
+        font-size: 50px;
+    }
+
     .navBar ul li {
         font-size: 14px;
         margin: 0 5px;
         padding-right: 10px;
     }
+
+    .introName {
+        padding: 250px 0;
+    }
     
     .introName h1 {
-        font-size: 28px;
+        font-size: 60px;
     }
     
     .introName p {
-        font-size: 18px;
+        font-size: 30px;
+        font-weight: 6000;
     }
     
     .core-value {
