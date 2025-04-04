@@ -1,0 +1,866 @@
+body {
+    margin: 0;
+    background-color: #0f1010;
+}
+
+.header {
+    background: linear-gradient(90deg, #f60d00, #2196F3);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    height: 60px;
+    opacity: 0.9;
+}
+
+.logoContainer {
+    display: flex; /* Aligns child elements in a row */
+    align-items: center; /* Vertically centers the elements */
+    margin-left: 15px;
+}
+
+.logoContainer p {
+    color: #f2f6f2;
+    font-size: 40px;
+    margin-left: 10px; /* Adds spacing between the logo and the text */
+    font-family: Brush Script MT, cursive;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+} 
+
+.navBar ul li {
+    margin: 0 15px;
+    font-size: 23px;
+    transition: color 0.3s ease;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: rgb(22, 19, 19);
+}
+
+.navBar ul li a:hover {
+    color: #ebd9d8; /* Change to your desired hover color */
+}
+
+#home {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+                url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg);
+    border-radius: 0px 0px 50px 0px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.9); /* Adds a subtle shadow */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.homesection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homesection img {
+    border-radius: 0px 1000px 0px 1000px;
+    box-shadow: 10px 10px 800px rgba(220, 220, 13, 0.9);
+    height: 700px;
+    width: auto;
+    margin-right: 100px; 
+}
+
+.introName {
+    margin-left: 150px;
+    line-height: 0;
+}
+
+.introName h3{
+    font-size: 50px;
+    color: #ff6a00;
+}
+
+.introName h1 {
+    font-size: 90px;
+    font-family: Tahoma,sans-serif;
+    margin-bottom: 90px;
+    color: white;
+    text-shadow: rgb(242, 45, 11) 1px 8px 5px;
+}
+
+.introName p {
+    font-size: 30px;
+    font-family: Brush Script MT, cursive;
+    color: aquamarine;
+}
+
+
+.home-socialIcons a {
+    color: rgb(247, 249, 244);
+    margin-right: 80px;
+    font-size: 25px;
+}
+
+.home-socialIcons a:hover {
+    color: blue;
+}
+
+#about {
+    padding-top: 40px;
+    color: white;
+    margin: 0 150px;
+}
+
+#about h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    text-decoration-line: underline;
+    color: rgb(3, 14, 234);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: #e1ff00 1px 3px 0px;
+}
+
+.about-hr {
+    margin-top: 50px;
+    border-color: #00ff77;
+}
+
+.aboutMe {
+    text-align: center;
+    margin: 0 150px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    color: antiquewhite;
+}
+
+.aboutContainer {
+    display: block;
+}
+
+.interestsContainer p{
+    font-size: 25px;
+}
+
+.interests {
+    display: block;
+
+}
+
+.interestsContainer ul{
+    font-size: 20px;
+    
+}
+
+.interest {
+    display: flex;
+    justify-content: center; /* Centers the interests horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 300px;
+    margin-bottom: 40px;
+}
+
+.interest img {
+    border-radius: 300px;
+}
+
+.interest p {
+    font-family: Brush Script MT, cursive;
+    font-size: 50px;
+}
+
+.skillsContainer div {
+    display: flex;
+    justify-content: center; /* Centers the skills horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 50px; /* Adds spacing between the skills */
+    margin-bottom: 40px; /* Adds spacing below each skill set */
+}
+
+
+
+.skillsContainer img {
+    width: 150px;
+    height: 100px;;
+}
+
+.skillsContainer h2 {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.core-values {
+    display: flex;
+    justify-content: center; /* Centers the core values horizontally */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Allows wrapping if there are too many items */
+    gap: 50px; /* Adds spacing between the core values */
+    margin: 20px 0; /* Adds spacing above and below the container */
+}
+
+.core-value {
+    display: block;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    border: 3px solid #dedfea; 
+    width: 250px; /* Ensures all spans have the same width */
+    height: 250px; /* Ensures all spans have the same height */
+    padding: 10px;
+    text-align: center;
+    font-size: 18px; /* Adjust font size for readability */
+    background-color: #c3bcc3; /* Light background for contrast */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(143, 139, 139, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    position: relative; /* Ensures z-index works properly */
+}
+
+.core-values i {
+    margin: 30px 0 40px 0;
+    font-size: 50px;
+    color: rgba(30, 7, 245, 0.8);
+}
+
+.core-value h4 {
+    color: rgb(255, 0, 179);/* Gradient text color */
+}
+
+.core-value p{
+    color: rgb(11, 11, 11);
+}
+
+.core-value:hover {
+    transform: scale(1.1); /* Enlarges the element slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+    z-index: 10; /* Brings the element to the front */
+}
+
+.language {
+    display: inline-block;
+    color: #0f1010;
+    background: linear-gradient(180deg, #f20505, white);
+    border: 3px solid #dedfea;
+    border-radius: 10px;
+    padding: 50px 10px;
+    width: 80px;
+    max-width: 100px;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(29, 10, 198, 0.1);
+    justify-content: center;
+}
+
+.educationContainer {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 30px; /* Adds spacing inside the container */
+    margin: 20px auto; /* Centers the container and adds spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limits the width for better readability */
+}
+
+.educationContainer h2 {
+    text-align: center; /* Centers the heading */
+    font-size: 36px; /* Adjusts the font size */
+    color: #333; /* Neutral text color */
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.education {
+    display: flex;
+    align-items: center; /* Vertically aligns the content */
+    gap: 20px; /* Adds spacing between the image and text */
+    margin-bottom: 20px; /* Adds spacing between education items */
+}
+
+.education img {
+    width: 150px; /* Sets a fixed width for the image */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Rounds the corners of the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.education p {
+    font-size: 18px; /* Adjusts the font size for readability */
+    line-height: 1.6; /* Improves text spacing */
+    color: #555; /* Softer text color for better readability */
+}
+
+.certifications {
+    margin-top: 20px; /* Adds spacing above certifications */
+}
+
+.certifications h3 {
+    font-size: 24px; /* Adjusts the font size for certification headings */
+    color: #333; /* Neutral text color */
+    margin-bottom: 10px; /* Adds spacing below the heading */
+}
+
+.certifications p {
+    font-size: 18px; /* Adjusts the font size for certification details */
+    line-height: 1.6; /* Improves text spacing */
+    color: #555; /* Softer text color */
+}
+
+.experience {
+    background-color: rgba(249, 249, 249, 0.8); /* Light background for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 800px; /* Limits the width for better readability */
+}
+
+.experience .job {
+    margin-bottom: 20px; /* Adds spacing between jobs */
+}
+
+.experience h3 {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 5px;
+    text-decoration-line: underline;
+}
+
+.experience p {
+    font-size: 18px;
+    color: rgb(154, 154, 27);
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+}
+
+#portfolio {
+    padding: 100px 20px;
+    background-color: #0f0d0d; /* Light background for contrast */
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ee0808;
+    text-shadow: yellow 1px 3px 2px;
+    text-decoration-line: underline;
+}
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #4CAF50; /* Green heading for projects */
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#contact {
+    padding-top: 30px;
+    margin-bottom: -100px;
+    background-color: rgba(239, 233, 233, 0.504);
+} 
+
+#contact h2 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    color: red;
+    text-shadow: #0f0d0d 0px 3px 5px;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+    border: 3px solid #dedfea;
+    border-radius: 50px;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgb(228, 51, 51) 50%, white 50%);
+    box-shadow: 0 4px 8px rgba(66, 65, 65, 0.7);
+}
+
+.contact-info-section p {
+    font-size: 20px;
+}
+
+
+.contactContainer h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-socialIcons {
+    display: flex;
+}
+
+.form .name-fields {
+    display: flex; /* Aligns the input fields in a row */
+    justify-content: space-between; /* Adds space between the fields */
+    gap: 10px; /* Adds spacing between the fields */
+}
+
+.form input[id="fname"],
+.form input[id="lname"] {
+    width: 48%; /* Ensures both fields take up equal width */
+    padding: 10px; /* Adds padding inside the input fields */
+    margin-bottom: 20px;
+}
+
+.form  input[type="email"], .form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.submit {
+    border-radius: 10px;
+    border: 2px;
+    padding: 15px;
+    font-size: 30px;
+    font-family: Brush Script MT, cursive;
+    background: linear-gradient(90deg, blue, yellow);
+    color: rgb(13, 13, 13);
+}
+
+.submit:hover, .reset:hover {
+    background-color: #23f22a; /* Darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.reset {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    border: 2px;
+    font-family: Brush Script MT, cursive;
+}
+
+.submit-reset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info  a {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;    
+    margin-bottom: 70px;
+    margin-right: 100px;
+}
+
+.contact-info a i{
+    margin-right: 8px;
+    color: #00ff77; /* Icon color */
+}
+
+.contact-info a i:hover {
+    color: blue;
+}
+
+.contact-socialIcons a i{
+    color: #ff6a00; /* Icon color */
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.contact-socialIcons a i:hover {
+    color: blue; /* Icon color on hover */
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Adds padding */
+    font-size: 18px; /* Adjusts font size */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.download-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.download-btn i {
+    margin-right: 8px; /* Adds spacing between the icon and text */
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    background-color: #0f1010;
+    color: #f20505;
+    padding: 0;
+}
+
+.footer-socialIcons {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-socialIcon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.footer-socialIcon a:hover {
+    color: blue;
+}
+
+.connectP {
+    color: green;
+    font-family: Brush Script MT, cursive;
+    font-size: 40px;
+}
+
+.footerp {
+    color: blue;
+}
+
+footer hr {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #f2f6f2;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Header adjustments */
+    .header {
+        height: 50px;
+        padding: 0 10px;
+    }
+    
+    .logoContainer p {
+        font-size: 24px;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    .navBar ul li {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+    
+    /* Home section adjustments */
+    #home {
+        padding-top: 60px;
+        border-radius: 0;
+    }
+    
+    .homesection {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .homesection img {
+        height: 600px;
+        width: auto;
+        margin-right: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        border-radius: 0px 1000px 0px 1000px;
+        box-shadow: 10px 10px 800px rgba(220, 220, 13, 0.9);
+    }
+    
+    .introName {
+        margin-left: 0;
+        padding: 0 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .introName h3 {
+        font-size: 40px;
+    }
+    
+    .introName h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    
+    .introName p {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    
+    .home-socialIcons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home-socialIcons a {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    
+    /* About section adjustments */
+    #about, .aboutMe {
+        margin: 0 20px;
+    }
+    
+    #about h2 {
+        font-size: 32px;
+        padding-top: 40px;
+    }
+    
+    .aboutMe {
+        font-size: 16px;
+    }
+    
+    .interest {
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    .interest img {
+        width: 50%;
+        height: 200px;
+        border-radius: 300px;
+    }
+    
+    .interest p {
+        font-size: 40px;
+    }
+    
+    .skillsContainer div {
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .skillsContainer img {
+        width: 100px;
+        height: 50px;;
+    }
+
+    .core-values {
+        gap: 20px;
+    }
+    
+    .core-value {
+        width: 80%;
+        height: auto;
+    }
+    
+    .language {
+        width: 70px;
+        padding: 30px 5px;
+        font-size: 16px;
+    }
+    
+    /* Education adjustments */
+    .educationContainer {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .education {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .education p {
+        font-size: 20px;
+        line-height: 1.4;
+
+    }
+    
+    .education img {
+        width: 100px;
+    }
+    
+    /* Experience adjustments */
+    .experience {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    /* Portfolio adjustments */
+    #portfolio {
+        padding: 50px 10px;
+    }
+    
+    #portfolio h2 {
+        font-size: 32px;
+    }
+    
+    .project {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    /* Contact adjustments */
+    #contact h2 {
+        font-size: 32px;
+    }
+    
+    .contactContainer {
+        flex-direction: column;
+        margin: 0 20px;
+        padding: 20px;
+        background: linear-gradient(180deg, rgb(228, 51, 51) 75%, white 25%);
+        gap: 0px;
+    }
+    
+    .contact-info-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .contact-info-section p {
+        margin-top: 90px;
+    }
+    
+    .contact-info a {
+        margin-right: 0;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-socialIcons {
+        justify-content: center;
+    }
+    
+    .contact-socialIcons a i {
+        margin-right: 30px;
+    }
+    
+    .form .name-fields {
+        flex-direction: column;
+    }
+    
+    .form input[id="fname"],
+    .form input[id="lname"] {
+        width: 100%;
+    }
+    
+    .submit, .reset {
+        font-size: 24px;
+        padding: 10px;
+    }
+    
+    /* Footer adjustments */
+    .footer-socialIcons {
+        gap: 20px;
+    }
+    
+    .connectP {
+        font-size: 30px;
+    }
+    
+    footer p {
+        font-size: 16px;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+    .logoContainer p {
+        font-size: 20px;
+    }
+    
+    .navBar ul li {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    
+    .introName h1 {
+        font-size: 28px;
+    }
+    
+    .introName p {
+        font-size: 18px;
+    }
+    
+    .core-value {
+        width: 90%;
+    }
+    
+    .language {
+        width: 60px;
+        padding: 20px 5px;
+        font-size: 14px;
+    }
+    
+    .contact-info a {
+        font-size: 16px;
+    }
+}
